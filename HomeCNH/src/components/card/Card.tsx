@@ -1,11 +1,11 @@
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, TouchableOpacity } from 'react-native';
 import styles from '../../styles/styles';
 
 export const Card = () => {
     return (
         <>
             <View style={styles.conteudo}>
-                <View style={styles.cartao}>
+                <TouchableOpacity style={styles.cartao}>
                     <Image
                         source={require('../../../assets/Condutor.png')}
                         style={styles.backgroundCartao} />
@@ -18,9 +18,9 @@ export const Card = () => {
                             <Text style={styles.negrito}>habilitação</Text>
                         </Text>
                     </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.cartao}>
+                <TouchableOpacity style={styles.cartao}>
                     <Image
                         source={require('../../../assets/veiculos.png')}
                         style={styles.backgroundCartao} />
@@ -34,8 +34,8 @@ export const Card = () => {
                             {'\n'}venda digital
                         </Text>
                     </View>
-                </View>
-                <View style={styles.cartao}>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.cartao}>
                     <Image
                         source={require('../../../assets/infracoes.png')}
                         style={styles.backgroundCartao} />
@@ -48,8 +48,8 @@ export const Card = () => {
                             <Text style={styles.negrito}> 40% de desconto</Text>
                         </Text>
                     </View>
-                </View>
-                <View style={styles.cartao}>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.cartao}>
                     <Image
                         source={require('../../../assets/educacao.png')}
                         style={styles.backgroundCartao} />
@@ -62,7 +62,7 @@ export const Card = () => {
                             <Text style={styles.negrito}>plataforma de cursos</Text>
                         </Text>
                     </View>
-                </View>
+                </TouchableOpacity>
             </View>
         </>
     )
